@@ -38,7 +38,7 @@ enum class DaysNedeli {
     open fun denNedeliName () = ""
     open fun denNedeliFullName () = ""
     open fun dayType () = ""
-    open fun WorkDays () = "Пн, Вт, Ср, Чт, Пт"
-    open fun Weekends () = "Сб, Вс"
+    open fun workDays () = "Пн, Вт, Ср, Чт, Пт"
+    open fun weekends () = "Сб, Вс"
 
 }

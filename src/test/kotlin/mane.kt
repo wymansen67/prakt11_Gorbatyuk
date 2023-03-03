@@ -1,4 +1,5 @@
 fun main () = try {
+    println(Tricolor.Red.RGB())
     println(Tricolor.Red.colorName() + " " +  Tricolor.Red.hex())
     println(Tricolor.Blue.colorName() + " " +  Tricolor.Blue.hex())
     println(Tricolor.Yellow.colorName() + " " + Tricolor.Yellow.hex())
@@ -16,7 +17,8 @@ fun main () = try {
     println(DaysNedeli.Friday.denNedeliFullName() + " " + DaysNedeli.Friday.dayType())
     println(DaysNedeli.Saturday.denNedeliFullName() + " " + DaysNedeli.Saturday.dayType())
     println(DaysNedeli.Sunday.denNedeliFullName() + " " +DaysNedeli.Sunday.dayType())
-    println(DaysNedeli.Monday.WorkDays())
+    println(DaysNedeli.Monday.workDays())
+    println(DaysNedeli.Monday.weekends())
 
 }
 catch (e:NumberFormatException) {println("Err")}
