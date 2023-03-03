@@ -9,13 +9,13 @@ fun main () = try {
 
     println("")
 
-    println(DaysNedeli.Monday.denNedeliFullName())
-    println(DaysNedeli.Tuesday.denNedeliFullName())
-    println(DaysNedeli.Wednesday.denNedeliFullName())
-    println(DaysNedeli.Thursday.denNedeliFullName())
-    println(DaysNedeli.Friday.denNedeliFullName())
-    println(DaysNedeli.Saturday.denNedeliFullName())
-    println(DaysNedeli.Sunday.denNedeliFullName())
+    println(DaysNedeli.Monday.denNedeliFullName() + " " + DaysNedeli.Monday.dayType())
+    println(DaysNedeli.Tuesday.denNedeliFullName() + " " + DaysNedeli.Tuesday.dayType())
+    println(DaysNedeli.Wednesday.denNedeliFullName() + " " + DaysNedeli.Wednesday.dayType())
+    println(DaysNedeli.Thursday.denNedeliFullName() + " " + DaysNedeli.Thursday.dayType())
+    println(DaysNedeli.Friday.denNedeliFullName() + " " + DaysNedeli.Friday.dayType())
+    println(DaysNedeli.Saturday.denNedeliFullName() + " " + DaysNedeli.Saturday.dayType())
+    println(DaysNedeli.Sunday.denNedeliFullName() + " " +DaysNedeli.Sunday.dayType())
     println(DaysNedeli.Monday.WorkDays())
 
 }

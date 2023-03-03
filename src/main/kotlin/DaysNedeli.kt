@@ -2,41 +2,42 @@ enum class DaysNedeli {
     Monday{
         override fun denNedeliName () = "Пн"
         override fun denNedeliFullName () = "Понедельник"
-        val dayType = "Рабочий"
+        override fun dayType () = "Рабочий"
     },
     Tuesday{
         override fun denNedeliName () = "Вт"
         override fun denNedeliFullName () = "Вторник"
-        val dayType = "Рабочий"
+        override fun dayType () = "Рабочий"
     },
     Wednesday{
         override fun denNedeliName () = "Ср"
         override fun denNedeliFullName () = "Среда"
-        val dayType = "Рабочий"
+        override fun dayType () = "Рабочий"
     },
     Thursday{
         override fun denNedeliName () = "Чт"
         override fun denNedeliFullName () = "Четверг"
-        val dayType = "Рабочий"
+        override fun dayType () = "Рабочий"
     },
     Friday{
         override fun denNedeliName () = "Пт"
         override fun denNedeliFullName () = "Пятница"
-        val dayType = "Рабочий"
+        override fun dayType () = "Рабочий"
     },
     Saturday{
         override fun denNedeliName () = "Сб"
         override fun denNedeliFullName () = "Суббота"
-        val dayType = "Выходной"
+        override fun dayType () = "Выходной"
     },
     Sunday{
         override fun denNedeliName () = "Вс"
         override fun denNedeliFullName () = "Воскресенье"
-        val dayType = "Выходной"
+        override fun dayType ()= "Выходной"
     };
 
     open fun denNedeliName () = ""
     open fun denNedeliFullName () = ""
+    open fun dayType () = ""
     open fun WorkDays () = "Пн, Вт, Ср, Чт, Пт"
     open fun Weekends () = "Сб, Вс"
 
